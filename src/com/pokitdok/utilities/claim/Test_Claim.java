@@ -65,7 +65,7 @@ public class Test_Claim {
         System.out.println(c.serialize());
         Map claimQuery = (JSONObject) JSONValue.parse(c.serialize());
       
-        Map<String, Object> response = pd.eligibility(claimQuery);
+        Map<String, Object> response = pd.claims(claimQuery);
         System.out.println(response);
 //      ObjectMapper mapper = new ObjectMapper();
 //      EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
