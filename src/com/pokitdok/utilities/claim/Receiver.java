@@ -1,5 +1,5 @@
 
-package com.pokitdok.utilities.eligibility;
+package com.pokitdok.utilities.claim;
 
 import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -9,17 +9,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "limit",
-    "remaining",
-    "applied"
+    "organization_name",
+    "id"
 })
-public class InNetwork___ {
+public class Receiver {
 
-    @JsonProperty("limit")
-    public Limit______ limit;
-    @JsonProperty("remaining")
-    public Remaining______ remaining;
-    @JsonProperty("applied")
-    public Applied______ applied;
+    @JsonProperty("organization_name")
+    public String organizationName;
+    @JsonProperty("id")
+    public String id;
 
 }

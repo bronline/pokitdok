@@ -1,52 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package com.pokitdok.utilities.claim;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pokitdok.utilities.eligibility.Address;
 import java.util.ArrayList;
+import java.util.List;
+import javax.annotation.Generated;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-/**
- *
- * @author Randy
- */
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Generated("org.jsonschema2pojo")
+@JsonPropertyOrder({
+    "information_release",
+    "plan_participation",
+    "provider_signature",
+    "total_charge_amount",
+    "claim_frequency",
+    "direct_payment",
+    "service_lines",
+    "place_of_service"
+})
 public class Claim {
-    public String transaction_code;
-    public String trading_partner_id;
-    public BillingProvider billing_provider = new BillingProvider();
-    public Subscriber subscriber = new Subscriber();
-    public PatientClaim claim = new PatientClaim();
-    
-    public class BillingProvider {
-        public String taxonomy_code;
-        public String first_name;
-        public String last_name;
-        public String npi;
-        public Address address = new Address();
-        public String tax_id;
-    }
-    
-    public class Subscriber {
-        public String first_name;
-        public String last_name;
-        public String member_id;
-        public Address address = new Address();
-        public String birth_date;
-        public String gender;
-    }
-    
-    public class PatientClaim {
-        public double total_charge_amount;
-        public ArrayList<ServiceLine> service_lines = new ArrayList<>();
-    }
-    
-    public String serialize() throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.writeValueAsString(this);
-    }
+
+    @JsonProperty("information_release")
+    public String informationRelease;
+    @JsonProperty("plan_participation")
+    public String planParticipation;
+    @JsonProperty("provider_signature")
+    public Boolean providerSignature;
+    @JsonProperty("total_charge_amount")
+    public String totalChargeAmount;
+    @JsonProperty("claim_frequency")
+    public String claimFrequency;
+    @JsonProperty("direct_payment")
+    public String directPayment;
+    @JsonProperty("service_lines")
+    public List<ClaimServiceLine> serviceLines = new ArrayList<ClaimServiceLine>();
+    @JsonProperty("place_of_service")
+    public String placeOfService;
+
 }

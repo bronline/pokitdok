@@ -27,7 +27,7 @@ public class Limitation {
     @JsonProperty("coverage_level")
     public String coverageLevel;
     @JsonProperty("messages")
-    public List<Message_> messages = new ArrayList<Message_>();
+    public List<Message> messages = new ArrayList<Message>();
     @JsonProperty("benefit_amount")
     public BenefitAmount benefitAmount;
     @JsonProperty("in_plan_network")

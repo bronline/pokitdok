@@ -1,5 +1,5 @@
 
-package com.pokitdok.utilities.eligibility;
+package com.pokitdok.utilities.claim;
 
 import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -9,26 +9,26 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "id",
-    "first_name",
-    "birth_date",
     "address",
+    "taxonomy_code",
+    "npi",
     "last_name",
-    "gender"
+    "first_name",
+    "tax_id"
 })
-public class Subscriber {
+public class BillingProvider {
 
-    @JsonProperty("id")
-    public String id;
-    @JsonProperty("first_name")
-    public String firstName;
-    @JsonProperty("birth_date")
-    public String birthDate;
     @JsonProperty("address")
     public Address address;
+    @JsonProperty("taxonomy_code")
+    public String taxonomyCode;
+    @JsonProperty("npi")
+    public String npi;
     @JsonProperty("last_name")
     public String lastName;
-    @JsonProperty("gender")
-    public String gender;
+    @JsonProperty("first_name")
+    public String firstName;
+    @JsonProperty("tax_id")
+    public String taxId;
 
 }

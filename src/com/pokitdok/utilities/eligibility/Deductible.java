@@ -15,8 +15,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Deductible {
 
     @JsonProperty("individual")
-    public Individual_ individual;
+    public Individual individual;
     @JsonProperty("family")
-    public Family_ family;
+    public Family family;
 
 }

@@ -15,8 +15,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Family {
 
     @JsonProperty("in_network")
-    public InNetwork_ inNetwork;
+    public InNetwork inNetwork;
     @JsonProperty("out_of_network")
-    public OutOfNetwork_ outOfNetwork;
+    public OutOfNetwork outOfNetwork;
 
 }

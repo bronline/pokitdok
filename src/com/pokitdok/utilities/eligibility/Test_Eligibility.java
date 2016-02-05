@@ -37,13 +37,12 @@ public class Test_Eligibility {
         e.service_types.add("health_benefit_plan_coverage");
         e.trading_partner_id = "united_health_care";
         
-      Map eligibilityQuery = (JSONObject) JSONValue.parse(e.serialize());
-      
-      Map<String, Object> response = pd.eligibility(eligibilityQuery);
+        Map eligibilityQuery = (JSONObject) JSONValue.parse(e.serialize());
 
-      ObjectMapper mapper = new ObjectMapper();
-      EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
-      
-      System.out.println(mapper.writeValueAsString(er));
+        Map<String, Object> response = pd.eligibility(eligibilityQuery);
+
+        ObjectMapper mapper = new ObjectMapper();
+        
+        EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
     }
 }

@@ -26,7 +26,7 @@ public class Test_Claim {
         PokitDok pd = new PokitDok("UYOjfVWTJ0y3o1idROXd", "WYoYu4rDhjkAGskBtTUwUC26e3Tvi9yxylCEX9vW");
         pd.connect();
         
-        Claim c = new Claim();
+        Claims c = new Claims();
         c.transaction_code = "chargeable";
         c.trading_partner_id = "MOCKPAYER";
         
@@ -51,7 +51,7 @@ public class Test_Claim {
         c.subscriber.address.zipcode = "87110";
         c.subscriber.address.addressLines.add("5603 Indian School RD NE");
         
-        c.claim.total_charge_amount = 50.00;
+        c.claim.total_charge_amount = 0.00;
         
         ServiceLine s = new ServiceLine();
         s.charge_amount = 50.00;
@@ -61,15 +61,27 @@ public class Test_Claim {
         s.unit_count = 1.0;
         s.service_date = "2016-01-29";
         c.claim.service_lines.add(s);
+        
+        ServiceLine s2 = new ServiceLine();
+        s2.charge_amount = 50.00;
+        s2.diagnosis_codes.add("719.47");
+        s2.diagnosis_codes.add("728.4");
+        s2.procedure_code = "98941";
+        s2.unit_count = 1.0;
+        s2.service_date = "2016-01-29";
+        c.claim.service_lines.add(s2);
+        
+        for(ServiceLine sl : c.claim.service_lines) {
+            c.claim.total_charge_amount += sl.charge_amount;
+        }
 
         System.out.println(c.serialize());
         Map claimQuery = (JSONObject) JSONValue.parse(c.serialize());
       
         Map<String, Object> response = pd.claims(claimQuery);
-        System.out.println(response);
-//      ObjectMapper mapper = new ObjectMapper();
-//      EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
-      
-//      System.out.println(mapper.writeValueAsString(er));
+        
+        ObjectMapper mapper = new ObjectMapper();
+        ClaimResponse cr = mapper.readValue(response.toString(), ClaimResponse.class);
+        System.out.println(mapper.writeValueAsString(cr));
     }
 }

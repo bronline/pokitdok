@@ -1,5 +1,5 @@
 
-package com.pokitdok.utilities.eligibility;
+package com.pokitdok.utilities.claim;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,20 +11,20 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "address_lines",
     "zipcode",
-    "state",
-    "city"
+    "address_lines",
+    "city",
+    "state"
 })
-public class Address_ {
+public class Address {
 
-    @JsonProperty("address_lines")
-    public List<String> addressLines = new ArrayList<String>();
     @JsonProperty("zipcode")
     public String zipcode;
-    @JsonProperty("state")
-    public String state;
+    @JsonProperty("address_lines")
+    public List<String> addressLines = new ArrayList<String>();
     @JsonProperty("city")
     public String city;
+    @JsonProperty("state")
+    public String state;
 
 }

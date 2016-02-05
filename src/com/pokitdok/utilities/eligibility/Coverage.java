@@ -57,13 +57,13 @@ public class Coverage {
     @JsonProperty("plan_number")
     public String planNumber;
     @JsonProperty("out_of_pocket")
-    public List<OutOfPocket_> outOfPocket = new ArrayList<OutOfPocket_>();
+    public List<CoverageOutOfPocket> outOfPocket = new ArrayList<CoverageOutOfPocket>();
     @JsonProperty("active")
     public Boolean active;
     @JsonProperty("service_type_codes")
     public List<String> serviceTypeCodes = new ArrayList<String>();
     @JsonProperty("deductibles")
-    public List<Deductible_> deductibles = new ArrayList<Deductible_>();
+    public List<CoverageDeductible> deductibles = new ArrayList<CoverageDeductible>();
     @JsonProperty("group_description")
     public String groupDescription;
     @JsonProperty("eligibility_begin_date")

@@ -16,10 +16,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class OutOfNetwork {
 
     @JsonProperty("limit")
-    public Limit_ limit;
+    public Limit limit;
     @JsonProperty("remaining")
-    public Remaining_ remaining;
+    public Remaining remaining;
     @JsonProperty("applied")
-    public Applied_ applied;
+    public Applied applied;
 
 }

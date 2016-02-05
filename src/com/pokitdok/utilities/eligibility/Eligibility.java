@@ -42,11 +42,7 @@ public class Eligibility {
     
     public String serialize() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
-//            mapper.writeValue(System.out, this);
-//        System.out.print("----------------->" + mapper.writeValueAsString(this));
-//        } catch (IOException ex) {
-//            Logger.getLogger(Eligibility.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+
         return mapper.writeValueAsString(this);
     }    
 }

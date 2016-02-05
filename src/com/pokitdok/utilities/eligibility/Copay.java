@@ -29,7 +29,7 @@ public class Copay {
     @JsonProperty("coverage_level")
     public String coverageLevel;
     @JsonProperty("messages")
-    public List<Message__> messages = new ArrayList<Message__>();
+    public List<Message> messages = new ArrayList<Message>();
     @JsonProperty("copayment")
     public Copayment copayment;
 

@@ -1,5 +1,5 @@
 
-package com.pokitdok.utilities.eligibility;
+package com.pokitdok.utilities.claim;
 
 import javax.annotation.Generated;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -9,14 +9,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
-    "amount",
-    "currency"
+    "name",
+    "title"
 })
-public class Limit____ {
+public class State {
 
-    @JsonProperty("amount")
-    public String amount;
-    @JsonProperty("currency")
-    public String currency;
+    @JsonProperty("name")
+    public String name;
+    @JsonProperty("title")
+    public String title;
 
 }
