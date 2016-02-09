@@ -1,0 +1,669 @@
+{
+  "data": {
+    "summary": {
+      "out_of_pocket": {
+        "individual": {
+          "out_of_network": {
+            "applied": {
+              "amount": "16.43",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "12500",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "12483.57",
+              "currency": "USD"
+            }
+          },
+          "in_network": {
+            "applied": {
+              "amount": "16.43",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "3000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "2983.57",
+              "currency": "USD"
+            }
+          }
+        },
+        "family": {
+          "out_of_network": {
+            "applied": {
+              "amount": "43.91",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "25000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "24956.09",
+              "currency": "USD"
+            }
+          },
+          "in_network": {
+            "applied": {
+              "amount": "43.91",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "6000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "5956.09",
+              "currency": "USD"
+            }
+          }
+        }
+      },
+      "deductible": {
+        "individual": {
+          "out_of_network": {
+            "applied": {
+              "amount": "16.43",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "6000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "5983.57",
+              "currency": "USD"
+            }
+          },
+          "in_network": {
+            "applied": {
+              "amount": "16.43",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "3000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "2983.57",
+              "currency": "USD"
+            }
+          }
+        },
+        "family": {
+          "out_of_network": {
+            "applied": {
+              "amount": "43.91",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "12000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "11956.09",
+              "currency": "USD"
+            }
+          },
+          "in_network": {
+            "applied": {
+              "amount": "43.91",
+              "currency": "USD"
+            },
+            "limit": {
+              "amount": "6000",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "5956.09",
+              "currency": "USD"
+            }
+          }
+        }
+      }
+    },
+    "coverage": {
+      "level": "employee_and_spouse",
+      "active": true,
+      "coinsurance": [
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "benefit_percent": 0,
+          "in_plan_network": "yes",
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "messages": [
+            {
+              "message": "GYN OFFICE VS"
+            },
+            {
+              "message": "GYN VISIT"
+            },
+            {
+              "message": "SPEC OFFICE"
+            },
+            {
+              "message": "SPEC VISIT"
+            },
+            {
+              "message": "PRIMARY OFFICE"
+            },
+            {
+              "message": "PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "employee_and_spouse"
+        },
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "benefit_percent": 0.5,
+          "in_plan_network": "no",
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "messages": [
+            {
+              "message": "GYN OFFICE VS,COINS APPLIES TO OUT OF POCKET"
+            },
+            {
+              "message": "GYN VISIT,COINS APPLIES TO OUT OF POCKET"
+            },
+            {
+              "message": "SPEC OFFICE,COINS APPLIES TO OUT OF POCKET"
+            },
+            {
+              "message": "SPEC VISIT,COINS APPLIES TO OUT OF POCKET"
+            },
+            {
+              "message": "PRIME CARE VST,COINS APPLIES TO OUT OF POCKET"
+            }
+          ],
+          "coverage_level": "employee_and_spouse"
+        }
+      ],
+      "insurance_type": "ppo",
+      "plan_begin_date": "2013-02-15",
+      "out_of_pocket": [
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "individual",
+          "benefit_amount": {
+            "amount": "3000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "individual",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "2983.57",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "family",
+          "benefit_amount": {
+            "amount": "6000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "family",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "5956.09",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "individual",
+          "benefit_amount": {
+            "amount": "12500",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "individual",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "12483.57",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "family",
+          "benefit_amount": {
+            "amount": "25000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "family",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "24956.09",
+            "currency": "USD"
+          }
+        }
+      ],
+      "service_type_codes": [
+        "98"
+      ],
+      "group_number": "088818801000013",
+      "service_date": "2013-08-10",
+      "service_types": [
+        "professional_physician_visit_office"
+      ],
+      "copay": [
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "messages": [
+            {
+              "message": "PRIMARY OFFICE"
+            }
+          ],
+          "coverage_level": "employee_and_spouse",
+          "copayment": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "in_plan_network": "not_applicable",
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "messages": [
+            {
+              "message": "GYN OFFICE VS"
+            },
+            {
+              "message": "GYN VISIT"
+            },
+            {
+              "message": "SPEC OFFICE"
+            },
+            {
+              "message": "SPEC VISIT"
+            },
+            {
+              "message": "PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "employee_and_spouse",
+          "copayment": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        }
+      ],
+      "deductibles": [
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "eligibility_date": "2013-01-01",
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX,GYN OFFICE VS,DED INCLUDED IN OOP,GYN VISIT,SPEC OFFICE,SPEC VISIT,PRIMARY OFFICE,PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "family",
+          "time_period": "calendar_year",
+          "benefit_amount": {
+            "amount": "6000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX"
+            }
+          ],
+          "coverage_level": "family",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "5956.09",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "eligibility_date": "2013-01-01",
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX,GYN OFFICE VS,DED INCLUDED IN OOP,GYN VISIT,SPEC OFFICE,SPEC VISIT,PRIMARY OFFICE,PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "individual",
+          "time_period": "calendar_year",
+          "benefit_amount": {
+            "amount": "3000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "yes",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX"
+            }
+          ],
+          "coverage_level": "individual",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "2983.57",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "eligibility_date": "2013-01-01",
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX,GYN OFFICE VS,DED INCLUDED IN OOP,GYN VISIT,SPEC OFFICE,SPEC VISIT,PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "family",
+          "time_period": "calendar_year",
+          "benefit_amount": {
+            "amount": "12000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX"
+            }
+          ],
+          "coverage_level": "family",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "11956.09",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "eligibility_date": "2013-01-01",
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX,GYN OFFICE VS,DED INCLUDED IN OOP,GYN VISIT,SPEC OFFICE,SPEC VISIT,PRIME CARE VST"
+            }
+          ],
+          "coverage_level": "individual",
+          "time_period": "calendar_year",
+          "benefit_amount": {
+            "amount": "6000",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "in_plan_network": "no",
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "messages": [
+            {
+              "message": "INT MED AND RX"
+            }
+          ],
+          "coverage_level": "individual",
+          "time_period": "remaining",
+          "benefit_amount": {
+            "amount": "5983.57",
+            "currency": "USD"
+          }
+        }
+      ],
+      "plan_number": "0888188",
+      "contacts": [
+        {
+          "contact_type": "payer",
+          "address": {
+            "zipcode": "40512",
+            "address_lines": [
+              "PO Box 14079"
+            ],
+            "city": "Lexington",
+            "state": "KY"
+          },
+          "name": "Aetna"
+        }
+      ],
+      "group_description": "MOCK INDIVIDUAL ADVANTAGE PLAN",
+      "limitations": [
+        {
+          "service_type_codes": [
+            "30"
+          ],
+          "messages": [
+            {
+              "message": "Unlimited Lifetime Benefits"
+            }
+          ],
+          "service_types": [
+            "health_benefit_plan_coverage"
+          ],
+          "coverage_level": "employee_and_spouse",
+          "benefit_amount": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "in_plan_network": "not_applicable",
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "messages": [
+            {
+              "message": "Plan Requires PreCert"
+            }
+          ],
+          "coverage_level": "employee_and_spouse",
+          "benefit_amount": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        },
+        {
+          "service_type_codes": [
+            "98"
+          ],
+          "messages": [
+            {
+              "message": "Commercial"
+            },
+            {
+              "message": "Plan includes NAP"
+            },
+            {
+              "message": "Pre-Existing may apply"
+            }
+          ],
+          "service_types": [
+            "professional_physician_visit_office"
+          ],
+          "coverage_level": "employee_and_spouse",
+          "benefit_amount": {
+            "amount": "0",
+            "currency": "USD"
+          }
+        }
+      ],
+      "plan_description": "Open Choice",
+      "eligibility_begin_date": "2012-02-01"
+    },
+    "service_type_codes": [
+      "98"
+    ],
+    "subscriber": {
+      "address": {
+        "zipcode": "29307",
+        "address_lines": [
+          "123 MAIN ST"
+        ],
+        "city": "SPARTANBURG",
+        "state": "SC"
+      },
+      "gender": "male",
+      "birth_date": "1998-06-05",
+      "last_name": "ALLEN",
+      "id": "945801841",
+      "first_name": "ASHER"
+    },
+    "provider": {
+      "npi": "1124369947",
+      "last_name": "Rion Marcus",
+      "first_name": "Rion"
+    },
+    "valid_request": true,
+    "trading_partner_id": "MOCKPAYER",
+    "pharmacy": {
+      "is_eligible": false
+    },
+    "service_types": [
+      "professional_physician_visit_office"
+    ],
+    "correlation_id": "ac4a4edc-d939-40d6-8612-c1b8ff26b4b4",
+    "payer": {
+      "name": "MOCK PAYER INC",
+      "id": "MOCKPAYER"
+    },
+    "client_id": "UYOjfVWTJ0y3o1idROXd"
+  },
+  "meta": {
+    "processing_time": 235,
+    "credits_billed": 0,
+    "rate_limit_amount": 3,
+    "rate_limit_reset": 1454976263,
+    "activity_id": "56b91f5b3fe8fa013b65a80b",
+    "application_mode": "test",
+    "credits_remaining": 0,
+    "rate_limit_cap": 1000
+  }
+}

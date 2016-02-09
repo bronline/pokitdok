@@ -44,5 +44,7 @@ public class Test_Eligibility {
         ObjectMapper mapper = new ObjectMapper();
         
         EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
+        
+        System.out.println(response.toString());
     }
 }
