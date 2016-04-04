@@ -16,7 +16,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "service_type_codes",
     "coverage_level",
     "messages",
-    "copayment"
+    "copayment",
+    "authorization_required"
 })
 public class Copay {
 
@@ -32,5 +33,6 @@ public class Copay {
     public List<Message> messages = new ArrayList<Message>();
     @JsonProperty("copayment")
     public Copayment copayment;
-
+    @JsonProperty("authorization_required")
+    public String authorizationRequired;
 }

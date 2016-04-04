@@ -16,7 +16,8 @@ import java.util.List;
     "service_types",
     "coverage_level",
     "benefit_amount",
-    "time_period"
+    "time_period",
+    "messages"
 })
 public class CoverageOutOfPocket {
     @JsonProperty("service_type_codes")
@@ -31,4 +32,7 @@ public class CoverageOutOfPocket {
     public BenefitAmount benefitAmount;
     @JsonProperty("time_period")
     public String timePeriod;
+    @JsonProperty("messages")
+    public List<Message> messages = new ArrayList<Message>();
+
 }

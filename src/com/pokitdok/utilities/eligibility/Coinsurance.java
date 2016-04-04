@@ -16,7 +16,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "service_type_codes",
     "coverage_level",
     "benefit_percent",
-    "messages"
+    "messages",
+    "authorization_required"
+
 })
 public class Coinsurance {
 
@@ -32,5 +34,7 @@ public class Coinsurance {
     public Float benefitPercent;
     @JsonProperty("messages")
     public List<Message> messages = new ArrayList<Message>();
+    @JsonProperty("authorization_required")
+    public String authorizationRequired;
 
 }

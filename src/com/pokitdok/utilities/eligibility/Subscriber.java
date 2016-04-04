@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "first_name",
     "birth_date",
     "address",
+    "middle_name",
     "last_name",
     "gender"
 })
@@ -26,6 +27,8 @@ public class Subscriber {
     public String birthDate;
     @JsonProperty("address")
     public Address address;
+    @JsonProperty("middle_name")
+    public String middleName;
     @JsonProperty("last_name")
     public String lastName;
     @JsonProperty("gender")

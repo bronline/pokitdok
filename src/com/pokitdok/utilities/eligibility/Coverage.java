@@ -12,7 +12,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
     "coinsurance",
+    "plan_end_date",
     "service_types",
+    "primary_care_provider",
     "limitations",
     "plan_description",
     "service_date",
@@ -23,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "level",
     "group_number",
     "plan_number",
+    "non_covered",
     "out_of_pocket",
     "active",
     "service_type_codes",
@@ -34,8 +37,12 @@ public class Coverage {
 
     @JsonProperty("coinsurance")
     public List<Coinsurance> coinsurance = new ArrayList<Coinsurance>();
+    @JsonProperty("plan_end_date")
+    public String planEndDate;
     @JsonProperty("service_types")
     public List<String> serviceTypes = new ArrayList<String>();
+    @JsonProperty("primary_care_provider")
+    public PrimaryCareProvider primaryCareProvider;
     @JsonProperty("limitations")
     public List<Limitation> limitations = new ArrayList<Limitation>();
     @JsonProperty("plan_description")
@@ -56,6 +63,8 @@ public class Coverage {
     public String groupNumber;
     @JsonProperty("plan_number")
     public String planNumber;
+    @JsonProperty("non_covered")
+    public List<NonCovered> nonCovered = new ArrayList<NonCovered>();
     @JsonProperty("out_of_pocket")
     public List<CoverageOutOfPocket> outOfPocket = new ArrayList<CoverageOutOfPocket>();
     @JsonProperty("active")

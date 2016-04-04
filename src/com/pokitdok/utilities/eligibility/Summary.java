@@ -9,11 +9,14 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
 @JsonPropertyOrder({
+    "services",
     "out_of_pocket",
     "deductible"
 })
 public class Summary {
 
+    @JsonProperty("services")
+    public Services services;
     @JsonProperty("out_of_pocket")
     public OutOfPocket outOfPocket;
     @JsonProperty("deductible")

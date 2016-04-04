@@ -16,7 +16,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "coverage_level",
     "messages",
     "benefit_amount",
-    "in_plan_network"
+    "in_plan_network",
+    "delivery"
 })
 public class Limitation {
 
@@ -32,5 +33,6 @@ public class Limitation {
     public BenefitAmount benefitAmount;
     @JsonProperty("in_plan_network")
     public String inPlanNetwork;
-
+    @JsonProperty("delivery")
+    public List<Delivery> delivery = new ArrayList<Delivery>();
 }

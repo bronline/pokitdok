@@ -21,21 +21,26 @@ import org.json.simple.parser.ParseException;
  */
 public class Test_Eligibility {
     public static void main(String[] args) throws JsonProcessingException, ParseException, IOException, UnauthorizedException {
-        PokitDok pd = new PokitDok("UYOjfVWTJ0y3o1idROXd", "WYoYu4rDhjkAGskBtTUwUC26e3Tvi9yxylCEX9vW");
+        PokitDok pd = new PokitDok("uLM1RVOYEOZ8q3ZGzKK9", "kCHQzp4auPOTtu98g5lGAeJJPINll46bFZHr5ksk");
         pd.connect();
         
         Eligibility e = new Eligibility();
-        e.member.first_name = "ASHER";
-        e.member.last_name = "ALLEN";
-        e.member.birth_date = "1998-06-05";
-        e.member.id = "945801841";
+        e.member.first_name = "RANDY";
+        e.member.last_name = "WANDELL";
+        e.member.birth_date = "1961-12-19";
+        e.member.id = "AKX913A78136";
         
-        e.provider.first_name = "Rion";
-        e.provider.last_name = "Marcus";
-        e.provider.npi = "1124369947";
+        e.provider.first_name = "PAUL";
+        e.provider.last_name = "HORDES";
+        e.provider.npi = "1497889620";
         
-        e.service_types.add("health_benefit_plan_coverage");
-        e.trading_partner_id = "united_health_care";
+//        e.service_types.add("chiropractic");
+//        e.service_types.add("health_benefit_plan_coverage");
+//        e.service_types.add("general_benefits");
+        e.service_types.add("chiropractic_office_visits");
+        e.trading_partner_id = "anthem_blue_cross_ca";
+        
+        System.out.println(e.serialize());
         
         Map eligibilityQuery = (JSONObject) JSONValue.parse(e.serialize());
 
@@ -43,7 +48,7 @@ public class Test_Eligibility {
 
         ObjectMapper mapper = new ObjectMapper();
         
-        EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
+//        EligibilityResponse er = mapper.readValue(response.toString(), EligibilityResponse.class);
         
         System.out.println(response.toString());
     }
